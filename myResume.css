@@ -3,9 +3,109 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #2a2d31;
+    --secondary-color: lightblue;
+    --education-background: #f9bc2f;
+    --work-experience: #fd8d30;
+    --my-name: 80px;
+    --job-name: 40px;
+    --contact-details: 35px;
+}
+
 .intro-container {
     display: flex;
-    justify-content: space-between;
-    background-color: aquamarine;
-    font-family: "Indie Flower", serif;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 0;
+    /* font-family:  "Courier Prime", serif; */
+}
+
+.intro-list {
+    list-style: none;
+}
+
+.logo, .list-name-job{
+    padding: 30px 35px;
+}
+
+.logo > .myPortrait{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.animation-typewriter{
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2.5px solid var(--primary-color);
+    width: 0;
+    animation: type 1s steps(70) 1s 1 normal both, blinkingCursor 500ms steps(70) infinite normal;
+}
+
+@keyframes type {
+    from {width: 0; }
+    to {width: 8ch; }
+}
+
+@keyframes blinkingCursor {
+    from { border-right-color: var(--primary-color); }
+    to { border-right-color: transparent; }
+}
+
+.name-list {
+    color: var(--primary-color);
+    font-size: var(--my-name);
+    font-weight: 600;
+}
+
+.job-list {
+    color: var(--primary-color);
+    font-size: var(--job-name);
+}
+
+.animation {
+    display: inline-block;
+    position: relative;
+    transform: translate(0);
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-out {
+    transform: translateX(-100%);
+    animation-name: slide-in-left;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.contact-logo {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-size: var(--contact-details);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--primary-color); 
+}
+
+a:hover {
+    color: blue;
+}
+
+a:focus {
+    color: purple;
 }
