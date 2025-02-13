@@ -8,6 +8,7 @@
     --secondary-color: lightblue;
     --education-background: #f9bc2f;
     --work-experience: #fd8d30;
+    --summary-background: #86C5D8;
     --my-name: 80px;
     --job-name: 40px;
     --contact-details: 35px;
@@ -22,9 +23,9 @@
     /* font-family:  "Courier Prime", serif; */
 }
 
-.intro-list {
+/* .intro-list {
     list-style: none;
-}
+} */
 
 .logo, .list-name-job{
     padding: 30px 35px;
@@ -89,12 +90,12 @@
     }
 }
 
-.contact-logo {
+/* .contact-logo {
     list-style: none;
     display: flex;
     gap: 30px;
     font-size: var(--contact-details);
-}
+} */
 
 a {
     text-decoration: none;
@@ -113,3 +114,24 @@ a:focus {
 hr .section1-2 {
     border: 1px solid red;
 }
+
+.summary-container {
+    background-color: var(--summary-background);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.about-me-container {
+    padding: 30px 35px;
+}
+
+.about-me {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.different-font {
+    color: red;
+}
+
+li  {list-style-type: circle;}
