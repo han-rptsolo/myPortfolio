@@ -23,9 +23,9 @@
     /* font-family:  "Courier Prime", serif; */
 }
 
-/* .intro-list {
+.intro-list {
     list-style: none;
-} */
+}
 
 .logo, .list-name-job{
     padding: 30px 35px;
@@ -90,12 +90,12 @@
     }
 }
 
-/* .contact-logo {
+.contact-logo {
     list-style: none;
     display: flex;
     gap: 30px;
     font-size: var(--contact-details);
-} */
+}
 
 a {
     text-decoration: none;
@@ -133,5 +133,68 @@ hr .section1-2 {
 .different-font {
     color: red;
 }
+.education-list {list-style-type: circle;}
 
-li  {list-style-type: circle;}
+.education-background {
+    padding: 	20px;
+    background-color: var(--education-background);
+}
+
+.education {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+ 
+.education-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-qualification, .second-qualification {
+    margin-bottom: 20px;
+}
+
+.education-qualification1, .education-qualification2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.education-courses {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.scm-course-name-list, .engineering-course-name-list {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.skill-status {
+    border: 10px solid  #2a2d31;
+    width: 70%;
+    border-radius: 8px;
+}
+
+.frontend, .backend, .frameworks {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.developer-tool {
+    font-size: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--work-experience);
+}
+
+.skill-container > div {
+    padding: 20px 20px;
+}
